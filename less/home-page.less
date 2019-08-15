@@ -68,6 +68,7 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px dashed @navigation-border;
 
     @media @mobile{
       flex-wrap:wrap;
@@ -106,3 +107,37 @@ header{
     padding-bottom:10px;
   }
 }
+
+  // Form for vacation package - stretch 
+  .form{
+    max-width:800px;
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items:center;
+    
+    
+    h2{
+      margin-top:15px;
+    }
+
+    label{
+      font-family: 'Indie Flower', cursive;
+      font-size:2.5rem;
+      margin:10px 0;
+    }
+    input, select, textarea{
+      width:60%;
+      font-family: 'Indie Flower', cursive;
+      .full();
+    }
+
+    .submit{
+      .custom-btn(@eastern-blue,@white,20%);
+      padding:5px;
+      margin:10px 0;
+    }
+  }
+
