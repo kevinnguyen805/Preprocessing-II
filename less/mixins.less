@@ -1,1 +1,16 @@
 // Mixins in here
+
+.custom-btn(@button-bg,@font-color,@widthBtn){
+     background-color:@button-bg;
+     color:@font-color;
+     width:@widthBtn;
+
+     font-size:2rem;
+     border-radius:8px;
+     text-align:center;
+     padding:11px;
+}
+
+.btn{
+     .custom-btn(@eastern-blue,@white,80%);
+}
